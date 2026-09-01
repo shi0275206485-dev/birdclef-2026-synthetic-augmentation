@@ -1,0 +1,23 @@
+# Virtual environments
+.venv/
+.conda/
+.aid/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Large generated data / index / model artifacts (regenerate via scripts, don't commit)
+usearch.index
+hoplite.sqlite
+birdnet_xgb.json
+birdnet_xgb_1.json
+birdnet_xgb_2.json
+
+*.pt
+*.npz
+*.wav
+.vscode/
