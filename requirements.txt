@@ -1,0 +1,40 @@
+# Core numerical / data stack
+numpy==2.2.5
+pandas==2.3.3
+scipy==1.15.3
+pyarrow==19.0.1
+scikit-learn==1.7.2
+
+# Audio processing
+librosa==0.11.0
+soundfile==0.14.0
+pydub==0.25.1
+
+# Modeling
+xgboost==3.1.0
+tensorflow==2.21.0
+# tflite_runtime is an optional lighter alternative to tensorflow for
+# running .tflite models (falls back to `tensorflow.lite` if absent).
+# tflite_runtime==2.14.0
+
+# PyTorch (CNN/MLP training, AudioLDM2 generation).
+# Project uses a CUDA 12.8 nightly build; install from the PyTorch nightly
+# index if you need the exact GPU build, e.g.:
+#   pip install --pre torch torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
+torch>=2.5
+torchaudio>=2.5
+
+# Generative audio (AudioLDM2 synthetic augmentation)
+diffusers==0.26.3
+transformers==4.38.2
+accelerate==0.27.2
+sentencepiece==0.2.1
+
+# Bird-specific embedding / retrieval / QC tooling
+birdnetlib==0.18.1
+usearch==2.25.3
+perch-hoplite @ git+https://github.com/google-research/perch-hoplite.git
+
+# Plotting
+matplotlib==3.10.9
+seaborn==0.13.2
